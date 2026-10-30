@@ -1,0 +1,14 @@
+[project]
+name = "10-norms-cosine-similarity"
+version = "0.1.0"
+description = "Norms and cosine similarity: when cosine equals the dot product"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "scikit-learn>=1.9.1",
+]
+
+[tool.ruff]
+line-length = 120

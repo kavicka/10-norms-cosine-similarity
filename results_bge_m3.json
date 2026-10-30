@@ -1,0 +1,43 @@
+{
+ "model": "bge-m3 via Ollama",
+ "texts": [
+  "Poistná udalosť: krupobitie poškodilo strechu rodinného domu.",
+  "Krupobitie zničilo strechu domu, žiadam o náhradu škody.",
+  "Recept na bryndzové halušky so slaninou.",
+  "Hail damaged the roof of my house and I want to file a claim."
+ ],
+ "dim": 1024,
+ "norms": [
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "dot": [
+  [
+   1.0,
+   0.8118,
+   0.3726,
+   0.6638
+  ],
+  [
+   0.8118,
+   1.0,
+   0.3427,
+   0.7704
+  ],
+  [
+   0.3726,
+   0.3427,
+   1.0,
+   0.3889
+  ],
+  [
+   0.6638,
+   0.7704,
+   0.3889,
+   1.0
+  ]
+ ],
+ "measured_on": "Adam's Mac (M4 Pro), Ollama 0.33.0, 2026-10-30, same request as bge_m3_check.py"
+}
