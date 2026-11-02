@@ -14,6 +14,13 @@ The math minimum before P6 (embeddings and retrieval). Goal from the roadmap: *e
 
 ![Dot product vs cosine](assets/cosine_vs_dot.gif)
 
+## Start here
+Imagine searching for “krupobitie poškodilo strechu domu” (“hail damaged the roof of a house”) and wanting the most relevant report. The texts are first converted into lists of numbers called **embeddings**. We then need a rule for deciding which lists are closest. This task asks why different comparison rules sometimes rank documents differently.
+
+A **norm** is the geometric length of a number list. A raw dot product rewards both similar direction and large length. A long general document can therefore outrank a short, precise report. **Cosine similarity** compares direction alone and puts the relevant report first in this example. If both vectors are normalized to length 1, cosine similarity and the dot product become the same number.
+
+The script checks this with artificial vectors, demonstrates the difference in Slovak-text retrieval, and inspects real embeddings from the bge-m3 model. The GIF shows how a long vector can affect ranking. The practical lesson is to check whether embeddings are normalized before choosing a similarity metric.
+
 ## Problem
 Retrieval (P6, P7) ranks documents by how "close" their embedding is to the query's. Vector databases offer three metrics: dot product (inner product), cosine similarity and Euclidean (L2) distance. Which one to use, and when does it not matter? Three ideas are needed:
 1. a **norm** = the length of a vector, and there are several ways to measure it;

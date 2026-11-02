@@ -14,6 +14,13 @@ Matematické minimum pred P6 (embeddingy a retrieval). Cieľ podľa roadmapy: *v
 
 ![Skalárny súčin vs cosine](assets/cosine_vs_dot.gif)
 
+## Najprv jednoducho
+Predstav si vyhľadávanie: napíšeš „krupobitie poškodilo strechu domu“ a chceš nájsť podobné hlásenie. Texty sa najprv zmenia na zoznamy čísel, nazývané **embeddingy**. Potom treba rozhodnúť, ktoré zoznamy sú si najbližšie. Táto úloha skúma, prečo rôzne spôsoby porovnávania niekedy vrátia iný výsledok.
+
+**Norma** je dĺžka zoznamu čísel v geometrickom zmysle. Surový skalárny súčin odmeňuje aj podobný smer, aj veľkú dĺžku. Preto môže dlhý všeobecný dokument poraziť krátke presné hlásenie. **Kosínusová podobnosť** porovnáva iba smer a v tomto príklade dá na prvé miesto tematicky správne hlásenie. Ak oba vektory najprv normalizujeme na dĺžku 1, kosínusová podobnosť a skalárny súčin sú rovnaké číslo.
+
+Skript to overí na umelých vektoroch, ukáže rozdiel v slovenskom vyhľadávaní a skontroluje skutočné embeddingy modelu bge-m3. GIF znázorňuje, ako dlhý vektor vie ovplyvniť poradie. Praktické ponaučenie: pred výberom metriky treba vedieť, či sú embeddingy normalizované.
+
 ## Problém
 Retrieval (P6, P7) zoraďuje dokumenty podľa toho, ako „blízko“ je ich embedding k embeddingu dopytu. Vektorové databázy ponúkajú tri metriky: skalárny súčin (inner product), cosine similarity a euklidovskú (L2) vzdialenosť. Ktorú použiť a kedy je to jedno? Treba tri myšlienky:
 1. **norma** = dĺžka vektora, a dá sa merať viacerými spôsobmi;
