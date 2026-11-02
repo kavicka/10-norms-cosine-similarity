@@ -1,6 +1,6 @@
 # 10 · Normy, cosine similarity a kedy cosine = skalárny súčin
 
-🇬🇧 [English version](README.md)
+🇬🇧 [English version](README.md) · 📘 [Tutoriál krok za krokom](TUTORIAL.sk.md)
 
 ## TL;DR
 Matematické minimum pred P6 (embeddingy a retrieval). Cieľ podľa roadmapy: *vysvetliť, kedy cosine = skalárny súčin (dot product)*. Krátka odpoveď je **keď majú oba vektory dĺžku 1.** Štyri experimenty (seed 0, každé číslo z `results.json` / `results_bge_m3.json`):

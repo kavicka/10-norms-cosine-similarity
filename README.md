@@ -1,6 +1,6 @@
 # 10 · Norms, cosine similarity & when cosine = dot product
 
-🇸🇰 [Slovenská verzia](README.sk.md)
+🇸🇰 [Slovenská verzia](README.sk.md) · 📘 [Step-by-step tutorial](TUTORIAL.md)
 
 ## TL;DR
 The math minimum before P6 (embeddings and retrieval). Goal from the roadmap: *explain when cosine = dot product*. The short answer is **when both vectors have length 1.** Four experiments (seed 0, every number from `results.json` / `results_bge_m3.json`):
